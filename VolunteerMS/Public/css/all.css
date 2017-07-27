@@ -1,0 +1,52 @@
+
+a {
+  text-decoration: none;
+}
+#header{
+    height: 150px;
+}
+
+#firm_login_and_sign{
+    float: right;
+    background-color:#c1282d;
+    border-radius:18px;
+    line-height:30px;
+    margin-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+#firm_login_and_sign>a{
+  color: #fff;
+}
+#welfare_login_and_sign{
+    float: right;
+    background-color:#c1282d;
+    border-radius:18px;
+    line-height:30px;
+    margin-top: 3%;
+    margin-right:2%;
+}
+#welfare_login_and_sign>a{
+  color: #fff;
+}
+#login_and_sign{
+    float: right;
+    background-color:#c1282d;
+    border-radius:18px;
+    line-height:30px;
+    margin-top: 3%;
+    margin-right:2%; 
+}
+#login_and_sign>a{
+  color: #fff;
+}
+#nav{
+text-align: right;
+}
+#nav>span{
+   font-size: 18px;
+    margin-left: 2%;
+        padding-top: 4%;
+    padding-bottom: 4%;
+}

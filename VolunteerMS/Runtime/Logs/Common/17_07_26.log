@@ -1,0 +1,78 @@
+[ 2017-07-26T18:05:20+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:27:08+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:27:12+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:27:13+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/applist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:28:34+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:28:35+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/applist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:46:41+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:46:42+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:46:43+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/applist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:47:00+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:47:01+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/applist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:47:02+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/applist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
+[ 2017-07-26T18:47:02+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Welfare/welfare/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welfare
+
