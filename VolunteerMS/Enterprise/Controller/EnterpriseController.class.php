@@ -1,5 +1,6 @@
 <?php
     namespace Enterprise\Controller;
+    use Compoment\Page;
     use Model\MessageModel;
     use Think\Controller;
     use Model\WelinstModel;
@@ -164,7 +165,12 @@
         public function finish() {
             $id = session("enter_user")[0]['id'];
             $commentModel = new CommentModel();
-            $info = $commentModel->queryEndComment($id);
+
+            $cinfo = $commentModel->queryEndComment($id);
+            $totalCount = count($cinfo);
+            $page = new Page($totalCount, 2);
+            $limit = $page->limit;
+            $info = $commentModel->queryEndCommentLimit($id, $limit);
             $this->assign("info", $info);
             $this->display();
         }
@@ -185,6 +191,7 @@
          */
         public function commentEnd() {
             $id = I('get.id');
+
             $commentModel = new CommentModel();
             $info = $commentModel->endUpdate($id);
 

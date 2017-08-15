@@ -47,26 +47,19 @@
                 $this->assign('id', I('get.id'));
                 $this->display();
             } else {
-
                 $id = I('get.id');
-
                 if (empty($_POST['articletitle'])) {
                     $this->error("请输入通知消息标题");
                     return;
                 }
-
                 $changeData['title'] = $this->test_input($_POST['articletitle']);
-
                 if (empty($_POST['abstract'])) {
                     $this->error("通知的内容");
                     return;
                 }
                 $changeData['content'] = $this->test_input($_POST['abstract']);
-
                 $changeData['updatetime'] = time();
-
                 $sqlid = "id=" . $id;
-
                 $chageUser= new MessageModel();
                 $res = $chageUser->where($sqlid)->save($changeData);
 
@@ -77,7 +70,7 @@
                     $this->success("消息修改成功");
                 }
             }
-            $this->display();
+
         }
 
         public function showlist() {

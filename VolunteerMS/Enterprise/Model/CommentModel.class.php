@@ -40,6 +40,22 @@ class CommentModel extends Model {
         return $info;
     }
 
+
+    public function queryEndCommentLimit($id, $limit) {
+        if (empty($id)) {
+            return ;
+        }
+
+        $sql = "select A.star as star , A.content as co_content ,B.content";
+        $sql .= " as ac_content,B.title,C.`name` as ent_name,D.name as wel_name ,B.id from mxh_";
+        $sql .= "comment A left join mxh_message B on A.message_id = B.id left join mxh";
+        $sql .= "_enterprise C on B.E_id=C.id left join mxh_welinst D on B.W_id = D.id where";
+        $sql .= " A.status = 2 and B.E_id = " . $id .$limit;
+
+        $info = D()->query($sql);
+        return $info;
+    }
+
     /**
      * 待服务列表
      */
