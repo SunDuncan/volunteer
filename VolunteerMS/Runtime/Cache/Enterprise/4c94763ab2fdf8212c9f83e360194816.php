@@ -34,7 +34,6 @@
         <table class="table table-border table-bordered table-bg table-hover table-sort">
             <thead>
             <tr class="text-c">
-                <th width="40"><input name="" type="checkbox" value=""></th>
                 <th width="80">序号</th>
                 <th width="100">消息简介</th>
                 <th width="150">发布时间</th>
@@ -44,7 +43,6 @@
             </thead>
             <tbody>
             <?php if(is_array($info)): foreach($info as $key=>$value): ?><tr class="text-c">
-                <td><input name="" type="checkbox" value=""></td>
                 <td><?php echo ($key + 1); ?></td>
                 <td onclick="modaldemo(<?php echo ($value["id"]); ?>)" name="<?php echo ($value["id"]); ?>"><?php echo ($value["title"]); ?></td>
                 <td><?php echo (date("y-m-d h:i", $value["createtime"])); ?></td>
@@ -125,6 +123,8 @@
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.config.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.all.min.js"> </script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
-
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.raty/2.7.0/jquery.raty.js"></script>
 </body>
 </html>

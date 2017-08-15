@@ -66,17 +66,26 @@
                 <ul>
 
                     <li><a data-href="<?php echo U('Enterprise/showlist');?>" data-title="消息列表" href="javascript:void(0)">消息列表</a></li>
-                    <li><a data-href="<?php echo U('Enterprise/servicelist');?>" data-title="服务列表" href="javascript:void(0)">服务列表</a></li>
+                    <li><a data-href="<?php echo U('Enterprise/servicelist');?>" data-title="服务列表" href="javascript:void(0)">待回复列表</a></li>
                     <li><a data-href="<?php echo U('Enterprise/pendsuccess');?>" data-title="申请成功列表" href="javascript:void(0)">申请成功列表</a></li>
                 </ul>
             </dd>
         </dl>
 
-        <dl id=menu-welInfo">
-            <dt><i class="Hui-iconfont">&#xe616;</i>企业管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+        <dl id="service-menu">
+            <dt><i class="Hui-iconfont">&#xe616;</i>服务管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="<?php echo U('Enterprise/showlist');?>" data-title="信息列表" href="javascript:void(0)">信息列表</a></li>
+                    <li><a data-href="<?php echo U('Enterprise/waitservice');?>" data-title="待服务列表" href="javascript:void(0)">待服务列表</a></li>
+                </ul>
+            </dd>
+        </dl>
+
+        <dl id=menu-guidetable">
+            <dt><i class="Hui-iconfont">&#xe616;</i>导表<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dd>
+                <ul>
+                    <li><a data-href="<?php echo U('Enterprise/finish');?>" data-title="已完成任务表" href="javascript:void(0)">已完成任务表</a></li>
                 </ul>
             </dd>
         </dl>
@@ -125,7 +134,9 @@
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.config.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.all.min.js"> </script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
-
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.raty/2.7.0/jquery.raty.js"></script>
 <!--请在下方写此页面业务相关的脚本-->
 
 <script type="text/javascript">

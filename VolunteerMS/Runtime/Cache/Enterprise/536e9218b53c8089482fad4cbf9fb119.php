@@ -28,7 +28,7 @@
 </head>
 <body>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 服务列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 服务管理 <span class="c-gray en">&gt;</span> 待服务列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
     <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-sort">
@@ -36,17 +36,17 @@
             <tr class="text-c">
                 <th width="80">序号</th>
                 <th width="100">消息简介</th>
-                <th width="150">发布时间</th>
                 <th width="60">所属福利机构</th>
+                <th width="60">操作</th>
             </tr>
             </thead>
             <tbody>
             <?php if(is_array($info)): foreach($info as $key=>$value): ?><tr class="text-c">
-                <td><?php echo ($key + 1); ?></td>
-                <td onclick="modaldemo(<?php echo ($value["id"]); ?>)"><?php echo ($value["title"]); ?></td>
-                <td><?php echo (date("y-m-d h:i", $value["createtime"])); ?></td>
-                <td class="td-status"><a href="" title="所属机构"><?php echo ($value["welname"]); ?></a></td>
-            </tr><?php endforeach; endif; ?>
+                    <td><?php echo ($key + 1); ?></td>
+                    <td onclick="modaldemo(<?php echo ($value["id"]); ?>)" name="<?php echo ($value["id"]); ?>"><?php echo ($value["title"]); ?></td>
+                    <td class="td-status"><?php echo ($value["w_name"]); ?></td>
+                    <td class="td-manage"><a href="<?php echo U('Enterprise/enterprise/commentEnd',['id' => $value['id']]);?>" title="操作"><span class='label label-success radius'>完成</span></a></td>
+                </tr><?php endforeach; endif; ?>
             </tbody>
         </table>
     </div>
@@ -62,9 +62,10 @@
                         <div class="row cl">
                             <label class="form-label col-xs-4 col-sm-2">服务内容标题：</label>
                             <div class="formControls col-xs-8 col-sm-9">
-                                <input type="text" class="input-text radius" value="" placeholder="" id="articletitle" name="articletitle" readonly="true">
+                                <input type="text" class="input-text radius" value="hjh" placeholder="" id="articletitle" name="articletitle" readonly="true">
                             </div>
                         </div>
+
                         <div class="row cl">
                             <label class="form-label col-xs-4 col-sm-2">服务内容：</label>
                             <div class="formControls col-xs-8 col-sm-9">

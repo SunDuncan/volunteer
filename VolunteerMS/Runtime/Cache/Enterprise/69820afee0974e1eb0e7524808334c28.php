@@ -28,25 +28,27 @@
 </head>
 <body>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 服务列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 导表 <span class="c-gray en">&gt;</span> 已完成任务表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
     <div class="mt-20">
-        <table class="table table-border table-bordered table-bg table-hover table-sort">
+        <table class="table table-border table-bordered table-bg table-hover table-sort dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
             <thead>
-            <tr class="text-c">
-                <th width="80">序号</th>
-                <th width="100">消息简介</th>
-                <th width="150">发布时间</th>
-                <th width="60">所属福利机构</th>
-            </tr>
+            <tr class="text-c" role="row">
+                <th width="40" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ID: 升序排列" style="width: 40px;">ID</th>
+                <th width="60" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="企业名称: 升序排列" style="width: 60px;">福利机构名称</th>
+                <th width="100" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="服务内容: 升序排列" style="width: 100px;">企业名称</th>
+                <th width="100" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="发布时间: 升序排列" style="width: 40px;">活动简介</th>
+                <th width="100" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="完成时间: 升序排列" style="width: 40px;">评价星级</th>
             </thead>
             <tbody>
-            <?php if(is_array($info)): foreach($info as $key=>$value): ?><tr class="text-c">
-                <td><?php echo ($key + 1); ?></td>
-                <td onclick="modaldemo(<?php echo ($value["id"]); ?>)"><?php echo ($value["title"]); ?></td>
-                <td><?php echo (date("y-m-d h:i", $value["createtime"])); ?></td>
-                <td class="td-status"><a href="" title="所属机构"><?php echo ($value["welname"]); ?></a></td>
-            </tr><?php endforeach; endif; ?>
+
+            <?php if(is_array($info)): foreach($info as $key=>$value): ?><tr class="text-c va-m odd" role="row">
+                    <td><?php echo ($key); ?></td>
+                    <td><?php echo ($value['wel_name']); ?></td>
+                    <td><?php echo ($value['ent_name']); ?></td>
+                    <td onclick="modal(<?php echo ($value["id"]); ?>)"><?php echo ($value['title']); ?></td>
+                    <td><?php echo ($value['star']); ?></td>
+                </tr><?php endforeach; endif; ?>
             </tbody>
         </table>
     </div>
@@ -65,6 +67,7 @@
                                 <input type="text" class="input-text radius" value="" placeholder="" id="articletitle" name="articletitle" readonly="true">
                             </div>
                         </div>
+
                         <div class="row cl">
                             <label class="form-label col-xs-4 col-sm-2">服务内容：</label>
                             <div class="formControls col-xs-8 col-sm-9">
@@ -80,12 +83,35 @@
         </div>
     </div>
 </div>
-<script>
-    function modaldemo(id) {
+<div class="mt-20" style="float:right"> <a href="<?php echo U('export');?>"><input class="btn btn-success radius" type="button" value="导表"></div></a>
+
+</div>
+<script type="text/javascript">
+    function order(){
+        $('.table-sort').dataTable({
+            "aaSorting": [[ 0, "desc" ]],//默认第几个排序
+            "bStateSave": true,//状态保存
+            "aoColumnDefs": [
+                //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+                {"orderable":false,"aTargets":{}}// 制定列不参与排序
+            ]
+        });
+        $('.table-sort tbody').on( 'click', 'tr', function () {
+            if ( $(this).hasClass('selected') ) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        });
+    };
+
+    function modal(id) {
 
         $("#modal-demo").modal("show");
         var aj=$.ajax({
-            url:"<?php echo U('enterprise/welinfo');?>",
+            url:"<?php echo U('Enterprise/enterprise/welinfo');?>",
             data:{
                 'id':id
             },
@@ -104,6 +130,7 @@
         aj();
     }
 </script>
+
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_STATIC_URL); ?>/h-ui/js/H-ui.min.js"></script>

@@ -162,7 +162,7 @@
          * 已经完成的表
          */
         public function finish() {
-            $id = session("wel_user")[0]['id'];
+            $id = session("enter_user")[0]['id'];
             $commentModel = new CommentModel();
             $info = $commentModel->queryEndComment($id);
             $this->assign("info", $info);
@@ -173,10 +173,9 @@
          * 等待服务的列表
          */
         public function waitservice() {
-            $id = session("wel_user")[0]['id'];
+            $id = session("enter_user")[0]['id'];
             $commentModel = new CommentModel();
             $info = $commentModel->waitComment($id);
-
             $this->assign("info", $info);
             $this->display();
         }
