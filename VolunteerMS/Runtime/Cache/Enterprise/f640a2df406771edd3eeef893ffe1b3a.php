@@ -34,7 +34,6 @@
         <table class="table table-border table-bordered table-bg table-hover table-sort">
             <thead>
             <tr class="text-c">
-                <th width="40"><input name="" type="checkbox" value=""></th>
                 <th width="80">序号</th>
                 <th width="100">消息简介</th>
                 <th width="150">发布时间</th>
@@ -43,7 +42,6 @@
             </thead>
             <tbody>
             <?php if(is_array($info)): foreach($info as $key=>$value): ?><tr class="text-c">
-                <td><input name="" type="checkbox" value=""></td>
                 <td><?php echo ($key + 1); ?></td>
                 <td onclick="modaldemo(<?php echo ($value["id"]); ?>)"><?php echo ($value["title"]); ?></td>
                 <td><?php echo (date("y-m-d h:i", $value["createtime"])); ?></td>

@@ -34,7 +34,6 @@
         <table class="table table-border table-bordered table-bg table-hover table-sort">
             <thead>
             <tr class="text-c">
-                <th width="40"><input name="" type="checkbox" value=""></th>
                 <th width="80">序号</th>
                 <th width="100">主题简介</th>
                 <th width="150">申请人列表</th>
@@ -42,7 +41,6 @@
             </thead>
             <tbody>
             <?php if(is_array($AllRs)): foreach($AllRs as $key=>$vo): ?><tr class="text-c">
-                <td><input name="" type="checkbox" value=""></td>
                 <td><?php echo ($key+1); ?></td>
                 <td onclick="modal(<?php echo ($vo["id"]); ?>)"><?php echo ($vo["title"]); ?></td>
                 <td class="td-manage"><a href="<?php echo U('appenterpriselist',['id'=>$vo['id']]);?>"><span class='label label-success radius'>进入</span></a></td>

@@ -34,7 +34,6 @@
         <table class="table table-border table-bordered table-bg table-hover table-sort">
             <thead>
             <tr class="text-c">
-                <th width="40"><input name="" type="checkbox" value=""></th>
                 <th width="80">序号</th>
                 <th width="100">企业名称</th>
                 <th width="150">操作</th>
@@ -42,7 +41,6 @@
             </thead>
             <tbody>
             <?php if(is_array($name)): foreach($name as $key=>$vo): ?><tr class="text-c">
-                <td><input name="" type="checkbox" value=""></td>
                 <td><?php echo ($key+1); ?></td>
                 <td><?php echo ($vo["name"]); ?></td>
                 <td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="" href="<?php echo U('Welinst/welfare/agree', ['id' => $vo['id'], 'mess_id' => $mess_id]);?>" title="同意"><span class='label label-success radius'>同意</span></a></td>

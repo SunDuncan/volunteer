@@ -28,13 +28,12 @@
 </head>
 <body>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 消息列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 服务管理 <span class="c-gray en">&gt;</span> 待服务列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
     <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-sort">
             <thead>
             <tr class="text-c">
-                <th width="40"><input name="" type="checkbox" value=""></th>
                 <th width="80">序号</th>
                 <th width="100">消息简介</th>
                 <th width="60">所属福利机构</th>
@@ -43,7 +42,6 @@
             </thead>
             <tbody>
             <?php if(is_array($info)): foreach($info as $key=>$value): ?><tr class="text-c">
-                    <td><input name="" type="checkbox" value=""></td>
                     <td><?php echo ($key + 1); ?></td>
                     <td onclick="modaldemo(<?php echo ($value["id"]); ?>)" name="<?php echo ($value["id"]); ?>"><?php echo ($value["title"]); ?></td>
                     <td class="td-status"><?php echo ($value["w_name"]); ?></td>
