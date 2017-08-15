@@ -77,7 +77,7 @@
             <dt><i class="Hui-iconfont">&#xe616;</i>福利机构管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="<?php echo U('welfare/showlist');?>" data-title="信息列表" href="javascript:void(0)">信息列表</a></li>
+                    <li><a data-href="<?php echo U('welfare/evaluate');?>" data-title="待评价列表" href="javascript:void(0)">待评价列表</a></li>
                 </ul>
             </dd>
         </dl>
@@ -86,7 +86,6 @@
             <dt><i class="Hui-iconfont">&#xe616;</i>导表<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="<?php echo U('welfare/evaluate');?>" data-title="待评价列表" href="javascript:void(0)">待评价列表</a></li>
                     <li><a data-href="<?php echo U('welfare/finish');?>" data-title="已完成任务表" href="javascript:void(0)">已完成任务表</a></li>
                 </ul>
             </dd>
