@@ -6063,3 +6063,209 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
 
+[ 2017-08-15T19:31:43+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/welfare/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `name` = '7-29-1' LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2017-08-15T19:31:50+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/Welfare/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `name` = '7-29-1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0004s ]
+SQL: INSERT INTO `mxh_message` (`W_id`,`title`,`content`,`createtime`) VALUES ('7','test4','测试','1502796710') [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005063s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2017-08-15T19:31:51+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/Welfare/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: select * from mxh_message where W_id = 7 and status = 1 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000368s ]
+
+[ 2017-08-15T19:31:52+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/welfare/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: select * from mxh_message where W_id = 7 and status = 1 [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000524s ]
+
+[ 2017-08-15T19:31:55+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/welfare/applist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `name` = '7-29-1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select * from mxh_message where W_id =7 and status = 1 [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000313s ]
+
+[ 2017-08-15T19:31:56+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/welfare/end.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+SQL: select *from mxh_message where W_id = 7 and status = 2 [ RunTime:0.0004s ]
+SQL: select *from mxh_enterprise where id = 6 [ RunTime:0.0001s ]
+SQL: select *from mxh_enterprise where id = 1 [ RunTime:0.0001s ]
+SQL: select *from mxh_enterprise where id = 1 [ RunTime:0.0000s ]
+SQL: select *from mxh_enterprise where id = 6 [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2017-08-15T19:31:59+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/welfare/evaluate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0005s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as e_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_enterprise C on A.E_id = C.id where A.W_id = 7 and A.status = 2 and B.status = 1 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Array to string conversion /home/wwwroot/volunteer.ducnan.cn/volunteer/VolunteerMS/Runtime/Cache/Welinst/ed58b61f62bd171ce803e6274216d66a.php 第 114 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000363s ]
+
+[ 2017-08-15T19:32:02+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/welfare/finish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0007s ]
+SQL: select A.star as star , A.content as co_content ,B.content as ac_content,B.title,C.`name` as ent_name,D.name as wel_name ,B.id from mxh_comment A left join mxh_message B on A.message_id = B.id left join mxh_enterprise C on B.E_id=C.id left join mxh_welinst D on B.W_id = D.id where A.status = 2 and B.W_id = 7 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-08-15T19:32:07+08:00 ] 218.94.29.190 /VolunteerMS/index.php/Welinst/welfare/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: select * from mxh_message where W_id = 7 and status = 1 [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
