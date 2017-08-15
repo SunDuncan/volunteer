@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!--包含头部文件-->
+<!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="utf-8">
@@ -26,30 +27,31 @@
     <meta name="description" content="H-ui.admin v3.1，是一款由国人开发的轻量级扁平化网站后台模板，完全免费开源的网站后台管理系统模版，适合中小型CMS后台系统。">
 </head>
 <body>
-<article class="page-container">
-    <form class="form form-horizontal" id="form-article-add" method="POST" action="<?php echo U('Welfare/edit', ['id' => $id]);?>">
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">通知消息标题：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="<?php echo ($info[0]["title"]); ?>" placeholder="" id="articletitle" name="articletitle">
-            </div>
-        </div>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 消息列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <div class="mt-20">
+        <table class="table table-border table-bordered table-bg table-hover table-sort">
+            <thead>
+            <tr class="text-c">
+                <th width="40"><input name="" type="checkbox" value=""></th>
+                <th width="80">序号</th>
+                <th width="100">企业名称</th>
+                <th width="150">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php if(is_array($name)): foreach($name as $key=>$vo): ?><tr class="text-c">
+                <td><input name="" type="checkbox" value=""></td>
+                <td><?php echo ($key+1); ?></td>
+                <td><?php echo ($vo["name"]); ?></td>
+                <td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="" href="<?php echo U('Welinst/welfare/agree', ['id' => $vo['id'], 'mess_id' => $mess_id]);?>" title="同意"><span class='label label-success radius'>同意</span></a></td>
+            </tr><?php endforeach; endif; ?>
+            </tbody>
+        </table>
+    </div>
+</div>
 
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">通知的内容：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <textarea name="abstract" cols="" rows="" class="textarea"  placeholder="说点什么...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="$.Huitextarealength(this,800)"><?php echo ($info[0]["content"]); ?></textarea>
-                <p class="textarea-numberbar"><em class="textarea-length">0</em>/200</p>
-            </div>
-        </div>
-
-        <div class="row cl">
-            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-                <button onClick="article_save_submit();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i>保存并提交审核</button>
-            </div>
-        </div>
-    </form>
-</article>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_STATIC_URL); ?>/h-ui/js/H-ui.min.js"></script>
@@ -58,13 +60,14 @@
 
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/My97DatePicker/4.8/WdatePicker.js"></script>
-<script type="text/javascript" src=<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/jquery.validate.js"></script>
-<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/validate-methods.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/messages_zh.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/webuploader/0.1.5/webuploader.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.config.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.all.min.js"> </script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_SRC_URL); ?>/js/jQuery.raty.js"></script>
 
 </body>
 </html>
