@@ -28,31 +28,30 @@
 </head>
 <body>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 消息列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 导表 <span class="c-gray en">&gt;</span> 已完成任务表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
     <div class="mt-20">
-        <table class="table table-border table-bordered table-bg table-hover table-sort">
+        <table class="table table-border table-bordered table-bg table-hover table-sort dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
             <thead>
-            <tr class="text-c">
-                <th width="80">序号</th>
-                <th width="100">服务名称</th>
-                <th width="150">发布时间</th>
-                <th width="60">发布状态</th>
-                <th width="60">操作</th>
-            </tr>
+            <tr class="text-c" role="row">
+                <th width="40" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="ID: 升序排列" style="width: 40px;">ID</th>
+                <th width="60" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="企业名称: 升序排列" style="width: 60px;">福利机构名称</th>
+                <th width="100" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="服务内容: 升序排列" style="width: 100px;">企业名称</th>
+                <th width="100" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="发布时间: 升序排列" style="width: 40px;">活动简介</th>
+                <th width="100" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="完成时间: 升序排列" style="width: 40px;">评价星级</th>
             </thead>
             <tbody>
-            <?php if(is_array($messageRs)): foreach($messageRs as $key=>$vo): ?><tr class="text-c">
-                <td><?php echo ($key+1); ?></td>
-                <td onclick="modal(<?php echo ($vo["id"]); ?>)"><?php echo ($vo["title"]); ?></td>
-                <td><?php echo (date("y-m-d h:i", $vo["createtime"])); ?></td>
-                <td class="td-status"><a href="" title="点击修改状态"><span class='label label-success radius'>正常</span></a></td>
-                <td class="td-manage"><a style="text-decoration:none" class="ml-5"  href="javascript:;" title="编辑" onclick="modaldemo('编辑', '<?php echo U('edit', ['id' => $vo['id']]);?>')"><i class="Hui-iconfont" >&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5"  href="<?php echo U('delete', ['id' => $vo['id']]);?>" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+
+            <?php if(is_array($info)): foreach($info as $key=>$value): ?><tr class="text-c va-m odd" role="row">
+                <td><?php echo ($key); ?></td>
+                <td><?php echo ($value['wel_name']); ?></td>
+                <td><?php echo ($value['ent_name']); ?></td>
+                <td onclick="modal(<?php echo ($value["id"]); ?>)"><?php echo ($value['title']); ?></td>
+                <td><?php echo ($value['star']); ?></td>
             </tr><?php endforeach; endif; ?>
             </tbody>
         </table>
     </div>
-
     <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content radius">
@@ -65,7 +64,7 @@
                         <div class="row cl">
                             <label class="form-label col-xs-4 col-sm-2">服务内容标题：</label>
                             <div class="formControls col-xs-8 col-sm-9">
-                                <input type="text" class="input-text radius" value="hjh" placeholder="" id="articletitle" name="articletitle" readonly="true">
+                                <input type="text" class="input-text radius" value="" placeholder="" id="articletitle" name="articletitle" readonly="true">
                             </div>
                         </div>
 
@@ -84,34 +83,54 @@
         </div>
     </div>
 </div>
-<script>
-    function modaldemo(title, url) {
-        layer_show(title, url,'', 300);
-    }
+   <div class="mt-20" style="float:right"> <a href="<?php echo U('export');?>"><input class="btn btn-success radius" type="button" value="导表"></div></a>
 
-    function modal(id) {
+</div>
+<script type="text/javascript">
+            function order(){
+                $('.table-sort').dataTable({
+                    "aaSorting": [[ 0, "desc" ]],//默认第几个排序
+                    "bStateSave": true,//状态保存
+                    "aoColumnDefs": [
+                        //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+                        {"orderable":false,"aTargets":{}}// 制定列不参与排序
+                    ]
+                });
+                $('.table-sort tbody').on( 'click', 'tr', function () {
+                    if ( $(this).hasClass('selected') ) {
+                        $(this).removeClass('selected');
+                    }
+                    else {
+                        table.$('tr.selected').removeClass('selected');
+                        $(this).addClass('selected');
+                    }
+                });
+            };
 
-        $("#modal-demo").modal("show");
-        var aj=$.ajax({
-            url:"<?php echo U('Enterprise/enterprise/welinfo');?>",
-            data:{
-                'id':id
-            },
-            type:"get",
-            success:function(data)  {
+            function modal(id) {
 
-                if (data.status) {
-                    $("#articletitle").val(data.msg.title);
-                    $("#textareacontent").val(data.msg.content);
-                }
-            },
-            error:function(){
-                alert("出现错误");
+                $("#modal-demo").modal("show");
+                var aj=$.ajax({
+                    url:"<?php echo U('Enterprise/enterprise/welinfo');?>",
+                    data:{
+                        'id':id
+                    },
+                    type:"get",
+                    success:function(data)  {
+
+                        if (data.status) {
+                            $("#articletitle").val(data.msg.title);
+                            $("#textareacontent").val(data.msg.content);
+                        }
+                    },
+                    error:function(){
+                        alert("出现错误");
+                    }
+                });
+                aj();
             }
-        });
-        aj();
-    }
 </script>
+
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_STATIC_URL); ?>/h-ui/js/H-ui.min.js"></script>

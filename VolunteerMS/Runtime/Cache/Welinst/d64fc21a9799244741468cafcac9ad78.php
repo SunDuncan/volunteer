@@ -28,13 +28,12 @@
 </head>
 <body>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 消息列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 已完成列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
     <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-sort">
             <thead>
             <tr class="text-c">
-                <th width="40"><input name="" type="checkbox" value=""></th>
                 <th width="80">序号</th>
                 <th width="100">服务名称</th>
                 <th width="150">发布时间</th>
@@ -44,7 +43,6 @@
             </thead>
             <tbody>
             <?php if(is_array($info)): foreach($info as $key=>$vo): ?><tr class="text-c">
-                    <td><input name="" type="checkbox" value=""></td>
                     <td><?php echo ($key+1); ?></td>
                     <td onclick="modal(<?php echo ($vo["id"]); ?>)"><?php echo ($vo["title"]); ?></td>
                     <td><?php echo (date("y-m-d h:i", $vo["createtime"])); ?></td>
@@ -122,13 +120,14 @@
 
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/My97DatePicker/4.8/WdatePicker.js"></script>
-<script type="text/javascript" src=<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/jquery.validate.js"></script>
-<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/validate-methods.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/messages_zh.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/webuploader/0.1.5/webuploader.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.config.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.all.min.js"> </script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_SRC_URL); ?>/js/jQuery.raty.js"></script>
 
 </body>
 </html>

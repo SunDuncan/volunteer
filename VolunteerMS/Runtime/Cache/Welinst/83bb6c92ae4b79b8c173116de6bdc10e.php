@@ -28,31 +28,28 @@
 </head>
 <body>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 消息列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 福利机构管理 <span class="c-gray en">&gt;</span> 待评价列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
     <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-sort">
             <thead>
             <tr class="text-c">
                 <th width="80">序号</th>
-                <th width="100">服务名称</th>
-                <th width="150">发布时间</th>
-                <th width="60">发布状态</th>
-                <th width="60">操作</th>
+                <th width="100">企业名称</th>
+                <th width="150">服务简介</th>
+                <th width="80">操作</th>
             </tr>
             </thead>
             <tbody>
-            <?php if(is_array($messageRs)): foreach($messageRs as $key=>$vo): ?><tr class="text-c">
-                <td><?php echo ($key+1); ?></td>
-                <td onclick="modal(<?php echo ($vo["id"]); ?>)"><?php echo ($vo["title"]); ?></td>
-                <td><?php echo (date("y-m-d h:i", $vo["createtime"])); ?></td>
-                <td class="td-status"><a href="" title="点击修改状态"><span class='label label-success radius'>正常</span></a></td>
-                <td class="td-manage"><a style="text-decoration:none" class="ml-5"  href="javascript:;" title="编辑" onclick="modaldemo('编辑', '<?php echo U('edit', ['id' => $vo['id']]);?>')"><i class="Hui-iconfont" >&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5"  href="<?php echo U('delete', ['id' => $vo['id']]);?>" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
-            </tr><?php endforeach; endif; ?>
+            <?php if(is_array($info)): foreach($info as $key=>$value): ?><tr class="text-c">
+                    <td><?php echo ($key + 1); ?></td>
+                    <td><?php echo ($value['e_name']); ?></td>
+                    <td onClick="modal(<?php echo ($value['message_id']); ?>)"><?php echo ($value['title']); ?></td>
+                    <td class="td-manage" onclick="modaldemo1(<?php echo ($value['id']); ?>)"><a style="text-decoration:none" class="ml-5" onClick=""  title="评价"><span class='label label-success radius'>评价</span></a></td>
+                </tr><?php endforeach; endif; ?>
             </tbody>
         </table>
     </div>
-
     <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content radius">
@@ -83,11 +80,88 @@
             </div>
         </div>
     </div>
+
+    <div id="modal-demo1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius">
+                <div class="modal-header">
+                    <h3 class="modal-title">评价</h3>
+                    <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+
+                </div>
+                <div class="modal-body">
+                    <form class="form form-horizontal" id="form-article-add1" action="<?php echo U('evaluate_post');?>" method="post">
+                        <div class="row cl">
+                            <div class="demo formControls col-xs-8 col-sm-9">
+                                <div id="function-demo" class="target-demo" style="cursor: pointer; ">
+                                    <img src="<?php echo (HUI_SRC_URL); ?>/images/star/iconpic-star-S-default.png" alt="1" title="差">&nbsp;
+                                    <img src="<?php echo (HUI_SRC_URL); ?>/images/star/iconpic-star-S-default.png" alt="2" title="一般">&nbsp;
+                                    <img src="<?php echo (HUI_SRC_URL); ?>/images/star/iconpic-star-S-default.png" alt="3" title="好">&nbsp;
+                                    <img src="<?php echo (HUI_SRC_URL); ?>/images/star/iconpic-star-S-default.png" alt="4" title="非常好">&nbsp;
+                                    <img src="<?php echo (HUI_SRC_URL); ?>/images/star/iconpic-star-S-default.png" alt="5" title="全五星">
+                                    <input type="hidden" name="score">
+                                </div>
+                                <div id="function-hint" class="hint">请选择评分</div>
+                            </div>
+                        </div>
+
+                        <div class="row cl">
+                            <label class="form-label col-xs-4 col-sm-2">评价内容：</label>
+                            <div class="formControls col-xs-8 col-sm-9">
+                                <textarea name="abstract" cols="" rows="" class="textarea radius"  datatype="*10-100"  dragonfly="true"  onKeyUp="$.Huitextarealength(this,800)" id="textcontent"></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="comment_id" value="<?php echo ($info); ?>">
+                        <button onClick="article_save_submit();" class="btn btn-primary radius"  id="commentSubmit" type="submit"><i class="Hui-iconfont">&#xe632;</i>提交</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 <script>
-    function modaldemo(title, url) {
-        layer_show(title, url,'', 300);
-    }
+
+
+    function modaldemo(){
+        $("#modal-demo").modal("show")
+    };
+
+     function modaldemo1(id) {
+         $("#modal-demo1").modal("show");
+         $('#form-article-add1').append('<input type="hidden" name="comment_id" value="' + id + '">');
+         evaluate();
+     };
+
+     function evaluate(){
+            $('#function-demo').raty({
+                number: 5,//多少个星星设置
+                targetType: 'hint',//类型选择，number是数字值，hint，是设置的数组值
+                path      : '<?php echo (HUI_SRC_URL); ?>/images/star',
+                hints     : ['1','2','3','4','5'],
+                cancelOff : 'cancel-off.png',
+                cancelOn  : 'cancel-on.png',
+                size      : 25,
+                starHalf  : 'star-half.png',
+                starOff   : 'iconpic-star-S-default.png',
+                starOn    : 'iconpic-star-S.png',
+                target    : '#function-hint',
+                cancel    : false,
+                targetKeep: true,
+                targetText: '请选择评分',
+
+                click: function(score, evt) {
+                    localStorage.setItem("score", score);
+                }
+
+            });
+
+        };
+
 
     function modal(id) {
 
@@ -111,6 +185,7 @@
         });
         aj();
     }
+
 </script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/layer/2.4/layer.js"></script>
