@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ 2017-08-15T10:09:46+08:00 ] 218.94.29.190 /index.php
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
@@ -398,3 +399,25 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
 
+=======
+[ 2017-08-15T19:26:23+08:00 ] 127.0.0.1 /VolunteerMS/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.061278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.012678s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.012997s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.395516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.395824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.041369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.041671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.029551s ]
+
+>>>>>>> 10ff3229739b67dc8861e2d4c7ac4ab7e83faf9e
