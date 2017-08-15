@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ 2017-08-15T13:18:45+08:00 ] 36.62.202.68 /VolunteerMS/index.php/Enterprise/user/login.html
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
@@ -2900,3 +2901,922 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
 
+=======
+[ 2017-08-15T18:58:01+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.333404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.030081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.032578s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015595s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015932s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.474832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.475355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.055004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.055307s ]
+
+[ 2017-08-15T18:58:05+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000491s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.053486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.053798s ]
+
+[ 2017-08-15T18:58:11+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.087666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002642s ]
+SQL: SHOW COLUMNS FROM `mxh_enterprise` [ RunTime:0.0207s ]
+SQL: SHOW COLUMNS FROM `mxh_enterprise` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `mxh_enterprise` WHERE `name` = '7-29-2' LIMIT 1   [ RunTime:0.0122s ]
+SQL: select *from mxh_enterprise where name = '7-29-2' [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000311s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001913s ]
+
+[ 2017-08-15T18:58:12+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000325s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000637s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.379311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.379627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010937s ]
+
+[ 2017-08-15T18:58:13+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001654s ]
+
+[ 2017-08-15T18:58:17+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002615s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001863s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002613s ]
+
+[ 2017-08-15T18:58:17+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002393s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000581s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001665s ]
+
+[ 2017-08-15T18:59:03+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006047s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000366s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000771s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.307149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.307470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.182971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.183276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.309001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.314557s ]
+
+[ 2017-08-15T18:59:04+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002346s ]
+
+[ 2017-08-15T18:59:08+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001399s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.214153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.214955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001618s ]
+
+[ 2017-08-15T18:59:40+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000612s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+
+[ 2017-08-15T18:59:50+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000394s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000824s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002573s ]
+
+[ 2017-08-15T19:00:23+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001852s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0124s ]
+
+[ 2017-08-15T19:00:40+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001900s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0123s ]
+
+[ 2017-08-15T19:01:04+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0135s ]
+
+[ 2017-08-15T19:01:08+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001930s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0122s ]
+
+[ 2017-08-15T19:02:34+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006620s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0127s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0124s ]
+
+[ 2017-08-15T19:02:50+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0117s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0211s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000654s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008731s ]
+
+[ 2017-08-15T19:04:02+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002385s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0116s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.157309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.157643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002739s ]
+
+[ 2017-08-15T19:07:20+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001844s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0146s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000676s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010516s ]
+
+[ 2017-08-15T19:08:18+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002186s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0188s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0131s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000557s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006487s ]
+
+[ 2017-08-15T19:09:00+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001686s ]
+
+[ 2017-08-15T19:09:04+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000632s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.347373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.347794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007795s ]
+
+[ 2017-08-15T19:09:04+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2017-08-15T19:09:07+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0128s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000686s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003537s ]
+
+[ 2017-08-15T19:09:10+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002790s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 1  [ RunTime:0.0149s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000542s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005344s ]
+
+[ 2017-08-15T19:09:58+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/finish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000151s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003782s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0122s ]
+SQL: select A.star as star , A.content as co_content ,B.content as ac_content,B.title,C.`name` as ent_name,D.name as wel_name ,B.id from mxh_comment A left join mxh_message B on A.message_id = B.id left join mxh_enterprise C on B.E_id=C.id left join mxh_welinst D on B.W_id = D.id where A.status = 2 and B.E_id = 6 [ RunTime:0.0129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000580s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.170422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170731s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001920s ]
+
+[ 2017-08-15T19:10:28+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001719s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 1  [ RunTime:0.0118s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003581s ]
+
+[ 2017-08-15T19:11:28+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0134s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0117s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000591s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002757s ]
+
+[ 2017-08-15T19:11:43+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0198s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 1  [ RunTime:0.0122s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0115s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000564s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000871s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002466s ]
+
+[ 2017-08-15T19:11:45+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/servicelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 1  [ RunTime:0.0124s ]
+SQL: SELECT * FROM `mxh_message` WHERE `id` IN ('3')  [ RunTime:0.0111s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000257s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000557s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022967s ]
+
+[ 2017-08-15T19:11:46+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/pendsuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001853s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 2 AND `E_id` = 6  [ RunTime:0.0123s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0159s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0127s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0125s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0137s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0134s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000561s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.202773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.203083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002310s ]
+
+[ 2017-08-15T19:11:48+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/finish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0130s ]
+SQL: select A.star as star , A.content as co_content ,B.content as ac_content,B.title,C.`name` as ent_name,D.name as wel_name ,B.id from mxh_comment A left join mxh_message B on A.message_id = B.id left join mxh_enterprise C on B.E_id=C.id left join mxh_welinst D on B.W_id = D.id where A.status = 2 and B.E_id = 6 [ RunTime:0.0124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000570s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003878s ]
+
+[ 2017-08-15T19:13:19+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000981s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.242001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.242306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002595s ]
+
+[ 2017-08-15T19:13:20+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001540s ]
+
+[ 2017-08-15T19:13:22+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 1  [ RunTime:0.0116s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0124s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0144s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000318s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000657s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.042706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.044387s ]
+
+[ 2017-08-15T19:14:02+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/showlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005098s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0255s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 1  [ RunTime:0.0141s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0117s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000659s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007871s ]
+
+[ 2017-08-15T19:14:05+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/servicelist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 1  [ RunTime:0.0134s ]
+SQL: SELECT * FROM `mxh_message` WHERE `id` IN ('3')  [ RunTime:0.0154s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0136s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000345s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000676s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002296s ]
+
+[ 2017-08-15T19:14:06+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/pendsuccess.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `mxh_welinst` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `mxh_message` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `mxh_message` WHERE `status` = 2 AND `E_id` = 6  [ RunTime:0.0127s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0128s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0139s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0131s ]
+SQL: SELECT * FROM `mxh_welinst` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0167s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000594s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002259s ]
+
+[ 2017-08-15T19:14:09+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0136s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000598s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001694s ]
+
+[ 2017-08-15T19:14:12+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/enterprise/commentEnd/id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0227s ]
+SQL: UPDATE `mxh_comment` SET `status`='1' WHERE `id` = 5 [ RunTime:0.0271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000495s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001508s ]
+
+[ 2017-08-15T19:14:13+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/waitservice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0122s ]
+SQL: select A.E_id ,A.id as message_id,A.title,A.content,B.id,C.name as w_name from mxh_message A left join mxh_comment B on A.id = B.message_id left join mxh_welinst C on A.W_id = C.id where A.E_id = 6 and A.status = 2 and B.status = 0 [ RunTime:0.0153s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2017-08-15T19:14:16+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/finish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0124s ]
+SQL: select A.star as star , A.content as co_content ,B.content as ac_content,B.title,C.`name` as ent_name,D.name as wel_name ,B.id from mxh_comment A left join mxh_message B on A.message_id = B.id left join mxh_enterprise C on B.E_id=C.id left join mxh_welinst D on B.W_id = D.id where A.status = 2 and B.E_id = 6 [ RunTime:0.0124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000583s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000971s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.143908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030704s ]
+
+[ 2017-08-15T19:14:38+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/finish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000363s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012402s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0144s ]
+SQL: select A.star as star , A.content as co_content ,B.content as ac_content,B.title,C.`name` as ent_name,D.name as wel_name ,B.id from mxh_comment A left join mxh_message B on A.message_id = B.id left join mxh_enterprise C on B.E_id=C.id left join mxh_welinst D on B.W_id = D.id where A.status = 2 and B.E_id = 6 [ RunTime:0.0121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000594s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.214396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.214759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.061892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.062337s ]
+
+[ 2017-08-15T19:14:38+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/finish.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0120s ]
+SQL: select A.star as star , A.content as co_content ,B.content as ac_content,B.title,C.`name` as ent_name,D.name as wel_name ,B.id from mxh_comment A left join mxh_message B on A.message_id = B.id left join mxh_enterprise C on B.E_id=C.id left join mxh_welinst D on B.W_id = D.id where A.status = 2 and B.E_id = 6 [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000593s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005967s ]
+
+[ 2017-08-15T19:16:37+08:00 ] 127.0.0.1 /VolunteerMS/index.php/Enterprise/Enterprise/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.043730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044076s ]
+SQL: SHOW COLUMNS FROM `mxh_comment` [ RunTime:0.0126s ]
+SQL: select A.star as star , A.content as co_content ,B.content as ac_content,B.title,C.`name` as ent_name,D.name as wel_name ,B.id from mxh_comment A left join mxh_message B on A.message_id = B.id left join mxh_enterprise C on B.E_id=C.id left join mxh_welinst D on B.W_id = D.id where A.status = 2 and B.E_id = 6 [ RunTime:0.0126s ]
+
+>>>>>>> a42a87f9dbb92cb99b19d069282761bb028e94be

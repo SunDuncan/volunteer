@@ -1,13 +1,12 @@
 <!--包含头部文件-->
 <include file="Public:header" />
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 待回复列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 消息管理 <span class="c-gray en">&gt;</span> 服务列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
     <div class="mt-20">
         <table class="table table-border table-bordered table-bg table-hover table-sort">
             <thead>
             <tr class="text-c">
-                <th width="40"><input name="" type="checkbox" value=""></th>
                 <th width="80">序号</th>
                 <th width="100">消息简介</th>
                 <th width="150">发布时间</th>
@@ -17,7 +16,6 @@
             <tbody>
             <foreach name="info" item="value" key="key">
             <tr class="text-c">
-                <td><input name="" type="checkbox" value=""></td>
                 <td>{$key + 1}</td>
                 <td onclick="modaldemo({$value.id})">{$value.title}</td>
                 <td>{$value.createtime|date="y-m-d h:i", ###}</td>
