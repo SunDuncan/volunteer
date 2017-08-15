@@ -41,17 +41,75 @@
             </tr>
             </thead>
             <tbody>
-            <tr class="text-c">
+            <?php if(is_array($AllRs)): foreach($AllRs as $key=>$vo): ?><tr class="text-c">
                 <td><input name="" type="checkbox" value=""></td>
-                <td>1</td>
-                <td>马晓晗申请涨工资</td>
-                <td class="td-manage"><a href="<?php echo U('appenterpriselist');?>"><span class='label label-success radius'>进入</span></a></td>
-            </tr>
-
+                <td><?php echo ($key+1); ?></td>
+                <td onclick="modal(<?php echo ($vo["id"]); ?>)"><?php echo ($vo["title"]); ?></td>
+                <td class="td-manage"><a href="<?php echo U('appenterpriselist',['id'=>$vo['id']]);?>"><span class='label label-success radius'>进入</span></a></td>
+            </tr><?php endforeach; endif; ?>
             </tbody>
         </table>
     </div>
+    <div id="modal-demo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content radius">
+                <div class="modal-header">
+                    <h3 class="modal-title">简介</h3>
+                    <a class="close" data-dismiss="modal" aria-hidden="true" href="javascript:void();">×</a>
+                </div>
+                <div class="modal-body">
+                    <form class="form form-horizontal" id="form-article-add">
+                        <div class="row cl">
+                            <label class="form-label col-xs-4 col-sm-2">服务内容标题：</label>
+                            <div class="formControls col-xs-8 col-sm-9">
+                                <input type="text" class="input-text radius" value="hjh" placeholder="" id="articletitle" name="articletitle" readonly="true">
+                            </div>
+                        </div>
+
+                        <div class="row cl">
+                            <label class="form-label col-xs-4 col-sm-2">服务内容：</label>
+                            <div class="formControls col-xs-8 col-sm-9">
+                                <textarea name="abstract" cols="" rows="" class="textarea radius"  datatype="*10-100"  dragonfly="true" readonly="true"  onKeyUp="$.Huitextarealength(this,800)" id="textareacontent"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script>
+    function modaldemo(title, url) {
+        layer_show(title, url,'', 300);
+    }
+
+    function modal(id) {
+
+        $("#modal-demo").modal("show");
+        var aj=$.ajax({
+            url:"<?php echo U('Enterprise/enterprise/welinfo');?>",
+            data:{
+                'id':id
+            },
+            type:"get",
+            success:function(data)  {
+
+                if (data.status) {
+                    $("#articletitle").val(data.msg.title);
+                    $("#textareacontent").val(data.msg.content);
+                }
+            },
+            error:function(){
+                alert("出现错误");
+            }
+        });
+        aj();
+    }
+</script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_STATIC_URL); ?>/h-ui/js/H-ui.min.js"></script>
@@ -60,13 +118,14 @@
 
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/My97DatePicker/4.8/WdatePicker.js"></script>
-<script type="text/javascript" src=<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/jquery.validate.js"></script>
-<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/validate-methods.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/messages_zh.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/webuploader/0.1.5/webuploader.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.config.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.all.min.js"> </script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_SRC_URL); ?>/js/jQuery.raty.js"></script>
 
 </body>
 </html>

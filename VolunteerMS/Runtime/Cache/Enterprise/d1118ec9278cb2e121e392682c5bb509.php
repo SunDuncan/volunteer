@@ -1,0 +1,102 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="<?php echo (VOLUNTEER_CSS_URL); ?>/zui.css">
+    <script type="text/javascript">
+    </script>
+    <style type="text/css">
+        body {
+            font-family: "Microsoft Yahei";
+        }
+        #header_text{
+            font-size: 40px;
+            text-align: center;
+            display: block;
+            font-weight: bolder;
+            padding-bottom: 1%;
+        }
+        #content{
+            background: url(<?php echo (VOLUNTEER_IMG_URL); ?>/login_body.jpg) no-repeat;
+            background-size: cover;
+
+        }
+        #login_font{
+            display: block;
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+            color: #474747;
+            background-color: #fff;
+            border-bottom:2px solid #cbcbcb;
+            padding:3%;
+        }
+        #login_all{
+            padding: 37%;
+        }
+        #form_all {
+            padding: 11%;
+            background: #fff;
+        }
+        #forget_pass{
+            float: right;
+
+        }
+        #forget_pass>a{
+            color: #b7b7b7;
+        }
+        .form_bottom{
+            display: flex;
+            width: 100%
+        }
+        #remenber_pass{
+            flex:50%;
+        }
+        #sign_up{
+            flex:50%;
+            text-align: right;
+            line-height: 3em;
+        }
+        #sign_up>a{
+            color: #c1282d;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="header">
+        <span id="header_text">企业管理系统</span>
+    </div>
+    <div id="content">
+        <div id="login_all">
+            <span id="login_font">登&nbsp录</span>
+            <div id="form_all">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="手机号/身份证/用户名" name="username">
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" placeholder="密码" name="password">
+                    </div>
+                    <span id="forget_pass"><a>忘记密码</a></span>
+                    <button class="btn btn-block" style="margin-top:23px;" type="submit">登录</button>
+                    <div class="form_bottom">
+                <span class="checkbox" id="remenber_pass">
+                      <label>
+                          <input type="checkbox" >记住密码
+                      </label>
+                </span>
+                <span id="sign_up"><a href="<?php echo U('register');?>">企业注册</a>
+                </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="<?php echo (VOLUNTEER_JS_URL); ?>/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="<?php echo (VOLUNTEER_JS_URL); ?>/zui.js"></script>
+</body>
+</html>

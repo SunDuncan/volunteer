@@ -88,7 +88,7 @@
                           <input type="checkbox" >记住密码
                       </label>
                 </span>
-                <span id="sign_up"><a href="#">福利机构注册</a>
+                <span id="sign_up"><a href="<?php echo U('User/register');?>">福利机构注册</a>
                 </span>
                     </div>
                 </form>

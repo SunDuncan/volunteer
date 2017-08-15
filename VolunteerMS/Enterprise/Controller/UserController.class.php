@@ -115,13 +115,11 @@ class UserController extends Controller
 
             if (!$info) {
                 $this->error("用户名或密码错误");
-                return ;
             } else {
             $sqlUser="select name,password,property,location,legal_representative from mxh_enterprise where id =" . $info   ;
             $userInfo = D()->query($sqlUser);
             session('EInfo', $userInfo, "enterprise");
             $this->success("注册成功", U('User/login'));
-
             }
 
         }
@@ -135,8 +133,6 @@ class UserController extends Controller
 
     public function login()
     {
-
-
         if (empty($_POST)) {
             $this->display();
         }else {
@@ -147,7 +143,6 @@ class UserController extends Controller
 
             }
                 $data['name'] = $this->test_input($_POST['username']);
-
 
             if (empty($_POST['password'])) {
                 $this->error("请输入密码");
@@ -161,14 +156,14 @@ class UserController extends Controller
             $res = $user->checkUser($data);
 
             if (!$res) {
-                echo "用户名或密码错误";
+                $this->error("用户名和密码错误", U('login'));
             } else {
-
+                $sql = "select *from mxh_enterprise where name = " . "'" . $data['name'] . "'";
+                $enterInfo = D()->query($sql);
+                session("enter_user", $enterInfo);
                 $this->success("登录成功", U('Index/index'));
             }
         }
     }
-
-
 }
 

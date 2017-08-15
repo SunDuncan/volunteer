@@ -159,10 +159,12 @@ class UserController extends Controller
             $res = $user->checkUser($data);
 
             if (!$res) {
-                echo "用户名或密码错误";
+                $this->error("用户名密码错误", 'login');
             } else {
-         
-                session(username,$data['name']);
+                $sqllist = "select *from mxh_welinst where name = " . "'" . $data['name'] . "'";
+                $info = D()->query($sqllist);
+                session("wel_user", $info);
+                session('username',$data['name']);
                 $this->success("登录成功", U('Index/index'));
             }
         }

@@ -5,8 +5,13 @@ use Think\Controller;
 
 class IndexController extends Controller
 {
-    public function index_houtai()
+    public function index()
     {
+        $info = session("wel_user");
+        if (!$info) {
+            $this->error("请登录", U('User/login'));
+        }
+        $this->assign("info", $info[0]);
         $this->display();
     }
 

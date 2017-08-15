@@ -42,7 +42,16 @@ class EnterpriseModel extends Model {
         return $res;
         
     }
+    public function enterpriseQueryList($info) {
+        if (empty($info)) {
+            return;
+        }
 
+        $map['id'] = array('in', $info);
+
+        $res = $this->user->where($map)->select();
+        return $res;
+    }
 
     public function checkUserUnique($info) {
         $selectInfo = array(

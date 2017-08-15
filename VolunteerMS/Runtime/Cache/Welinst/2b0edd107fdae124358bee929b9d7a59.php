@@ -33,13 +33,13 @@
             <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
             <nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
                 <ul class="cl">
-                    <li>超级管理员</li>
+                    <li>欢迎</li>
                     <li class="dropDown dropDown_hover">
-                        <a href="#" class="dropDown_A">admin <i class="Hui-iconfont">&#xe6d5;</i></a>
+                        <a href="#" class="dropDown_A"><?php echo ($info["name"]); ?> <i class="Hui-iconfont">&#xe6d5;</i></a>
                         <ul class="dropDown-menu menu radius box-shadow">
                             <li><a href="javascript:;" onClick="myselfinfo()">个人信息</a></li>
                             <li><a href="#">切换账户</a></li>
-                            <li><a href="#">退出</a></li>
+                            <li><a href="<?php echo U('User/logout');?>">退出</a></li>
                         </ul>
                     </li>
                     <li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>
@@ -67,18 +67,31 @@
                     <li><a data-href="<?php echo U('welfare/add');?>" data-title="消息发布" href="javascript:void(0)">消息发布</a></li>
                     <li><a data-href="<?php echo U('welfare/showlist');?>" data-title="消息列表" href="javascript:void(0)">消息列表</a></li>
                     <li><a data-href="<?php echo U('welfare/applist');?>" data-title="消息申请列表" href="javascript:void(0)">消息申请列表</a></li>
+                    <li><a data-href="<?php echo U('welfare/end');?>" data-title="已完成列表" href="javascript:void(0)">已完成列表</a></li>
+
                 </ul>
             </dd>
         </dl>
 
         <dl id=menu-welInfo">
-            <dt><i class="Hui-iconfont">&#xe616;</i>福利机构个管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dt><i class="Hui-iconfont">&#xe616;</i>福利机构管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
                     <li><a data-href="<?php echo U('welfare/showlist');?>" data-title="信息列表" href="javascript:void(0)">信息列表</a></li>
                 </ul>
             </dd>
         </dl>
+
+        <dl id=menu-guidetable">
+            <dt><i class="Hui-iconfont">&#xe616;</i>导表<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dd>
+                <ul>
+                    <li><a data-href="<?php echo U('welfare/evaluate');?>" data-title="待评价列表" href="javascript:void(0)">待评价列表</a></li>
+                    <li><a data-href="<?php echo U('welfare/finish');?>" data-title="已完成任务表" href="javascript:void(0)">已完成任务表</a></li>
+                </ul>
+            </dd>
+        </dl>
+
     </div>
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
@@ -117,13 +130,14 @@
 
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/My97DatePicker/4.8/WdatePicker.js"></script>
-<script type="text/javascript" src=<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/jquery.validate.js"></script>
-<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/validate-methods.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/jquery.validation/1.14.0/messages_zh.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/webuploader/0.1.5/webuploader.min.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.config.js"></script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/ueditor.all.min.js"> </script>
 <script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_LIB_URL); ?>/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="<?php echo (HUI_SRC_URL); ?>/js/jQuery.raty.js"></script>
 
 <!--请在下方写此页面业务相关的脚本-->
 

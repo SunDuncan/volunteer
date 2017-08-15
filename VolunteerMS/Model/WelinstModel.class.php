@@ -62,5 +62,20 @@ class WelinstModel extends Model {
         return $res['id'];
     }
 
-    
+    public function findId($username){
+        $selectInfo = array(
+            "name" =>$username
+        );
+        $res = $this->where($selectInfo)->find();
+        return $res['id'];
+    }
+    //通过它的id来获取到它的值
+    public function findInfo($id) {
+        if(empty($id)) {
+            return ;
+        }
+
+        $res = $this->where(array('id' => $id))->find();
+        return $res;
+    }
 }

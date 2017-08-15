@@ -1,0 +1,24 @@
+[ 2017-08-06T17:33:54+08:00 ] 127.0.0.1 /VolunteerMS/index.php/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Welcome
+
+[ 2017-08-06T17:35:55+08:00 ] 127.0.0.1 /VolunteerMS/index.php/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Welcome
+
+[ 2017-08-06T17:37:34+08:00 ] 127.0.0.1 /VolunteerMS/index.php/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Welcome
+
+[ 2017-08-06T18:09:06+08:00 ] 127.0.0.1 /VolunteerMS/index.php/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Welcome
+

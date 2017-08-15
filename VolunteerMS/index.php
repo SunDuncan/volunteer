@@ -11,4 +11,5 @@ define('VOLUNTEER_JS_URL', CITE_ROOT."VolunteerMS/Public/js/");
 define('UPLOAD_URL', CITE_ROOT."VolunteerMS/Public/");
 define("HUI_STATIC_URL", CITE_ROOT."VolunteerMS/Public/hui/static");
 define("HUI_LIB_URL", CITE_ROOT."VolunteerMS/Public/hui/lib");
+define("HUI_SRC_URL", CITE_ROOT."VolunteerMS/Public/hui/src");
 include "../ThinkPHP/ThinkPHP.php";
