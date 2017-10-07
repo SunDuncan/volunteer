@@ -67,7 +67,7 @@
                     <li><a data-href="<?php echo U('welfare/add');?>" data-title="消息发布" href="javascript:void(0)">消息发布</a></li>
                     <li><a data-href="<?php echo U('welfare/showlist');?>" data-title="消息列表" href="javascript:void(0)">消息列表</a></li>
                     <li><a data-href="<?php echo U('welfare/applist');?>" data-title="消息申请列表" href="javascript:void(0)">消息申请列表</a></li>
-                    <li><a data-href="<?php echo U('welfare/end');?>" data-title="已完成列表" href="javascript:void(0)">已完成列表</a></li>
+                    <li><a data-href="<?php echo U('welfare/end');?>" data-title="申请成功列表" href="javascript:void(0)">申请成功列表</a></li>
 
                 </ul>
             </dd>

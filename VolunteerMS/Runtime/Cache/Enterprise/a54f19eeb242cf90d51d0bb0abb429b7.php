@@ -49,6 +49,12 @@
                     <td onclick="modal(<?php echo ($value["id"]); ?>)"><?php echo ($value['title']); ?></td>
                     <td><?php echo ($value['star']); ?></td>
                 </tr><?php endforeach; endif; ?>
+
+            <tr>
+                <td colspan="20" style="text-align: center;">
+                    <?php echo ($pagelist); ?>
+                </td>
+            </tr>
             </tbody>
         </table>
     </div>

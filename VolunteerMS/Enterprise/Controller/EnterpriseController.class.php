@@ -166,11 +166,7 @@
             $id = session("enter_user")[0]['id'];
             $commentModel = new CommentModel();
 
-            $cinfo = $commentModel->queryEndComment($id);
-            $totalCount = count($cinfo);
-            $page = new Page($totalCount, 2);
-            $limit = $page->limit;
-            $info = $commentModel->queryEndCommentLimit($id, $limit);
+            $info = $commentModel->queryEndComment($id);
             $this->assign("info", $info);
             $this->display();
         }
